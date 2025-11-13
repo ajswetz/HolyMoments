@@ -113,7 +113,21 @@
                     What Awaits You
                 </h2>
 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--spacing-lg); max-width: 1000px; margin: 0 auto;">
+                <style>
+                    .features-grid {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: var(--spacing-lg);
+                        max-width: 900px;
+                        margin: 0 auto;
+                    }
+                    @media (max-width: 768px) {
+                        .features-grid {
+                            grid-template-columns: 1fr;
+                        }
+                    }
+                </style>
+                <div class="features-grid">
                     <!-- Feature 1 -->
                     <div class="card">
                         <h3 style="font-family: var(--font-ui); font-size: var(--text-xl); color: var(--color-royal-violet); margin-bottom: var(--spacing-sm);">
@@ -161,13 +175,10 @@
         <section class="section text-center">
             <div class="container" style="max-width: 700px;">
                 <h2 class="mb-md" style="color: var(--color-royal-violet);">
-                    Stay Connected
+                    Coming Soon
                 </h2>
                 <p style="font-size: var(--text-lg); color: var(--color-text-secondary); margin-bottom: var(--spacing-lg);">
-                    Be the first to know when Holy Moments launches. Follow our journey and get updates on release dates for iOS and Android.
-                </p>
-                <p style="font-family: var(--font-ui); color: var(--color-text-primary);">
-                    Questions or feedback? Reach out at
+                    Holy Moments will be available on iOS and Android soon. Questions or feedback? Contact us at
                     <a href="mailto:contact@holymoments.app" style="color: var(--color-royal-violet); text-decoration: underline;">contact@holymoments.app</a>
                 </p>
             </div>
