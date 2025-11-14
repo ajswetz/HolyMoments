@@ -95,11 +95,13 @@
 /* Dark Mode Variables */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: var(--color-slate-shadow);
+    --color-background: #2a313a;
     --color-text-primary: var(--color-pale-lavender);
     --color-text-secondary: #c5c5d8;
     --color-button-primary: var(--color-lavender-mist);
     --color-button-hover: #b09fff;
+    --color-accent: var(--color-lavender-mist);
+    --color-accent-light: #d4c8ff;
   }
 }
 
@@ -126,6 +128,7 @@ body {
   color: var(--color-text-primary);
   background-color: var(--color-background);
   min-height: 100vh;
+  padding-top: 64px; /* Account for fixed header height */
 }
 
 /* ========================================
@@ -330,11 +333,14 @@ strong, b {
    NAVIGATION
    ======================================== */
 .header {
+  width: 100%;
   background-color: var(--color-pure-white);
   box-shadow: var(--shadow-sm);
   padding: var(--spacing-sm) 0;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
 }
 
@@ -388,7 +394,13 @@ strong, b {
   background-color: var(--color-slate-shadow);
   color: var(--color-pale-lavender);
   padding: var(--spacing-xl) 0 var(--spacing-lg);
-  margin-top: var(--spacing-3xl);
+  margin-top: var(--spacing-xl);
+}
+
+@media (prefers-color-scheme: dark) {
+  .footer {
+    background-color: var(--color-deep-black);
+  }
 }
 
 .footer-content {
@@ -439,13 +451,193 @@ strong, b {
 
 @media (prefers-color-scheme: dark) {
   .card {
-    background-color: var(--color-very-dark-gray);
+    background-color: var(--color-slate-shadow);
   }
 }
 
 .card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-xl);
+}
+
+/* Features Section Styling */
+.features-section {
+  background: linear-gradient(180deg, var(--color-pale-lavender) 0%, var(--color-cream) 100%);
+  padding: var(--spacing-3xl) 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .features-section {
+    background: linear-gradient(180deg, #2a313a 0%, var(--color-deep-black) 100%);
+  }
+}
+
+/* Feature Card Headers */
+.feature-card-header {
+  font-family: var(--font-ui);
+  font-size: var(--text-xl);
+  color: var(--color-accent);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Feature Card Text */
+.feature-card-text {
+  color: var(--color-text-secondary);
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+.hero-icon {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto var(--spacing-lg);
+  display: block;
+  border-radius: 27px;
+  box-shadow: var(--shadow-xl);
+}
+
+.hero-title {
+  color: var(--color-accent);
+  font-size: var(--text-6xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.hero-subtitle {
+  font-family: var(--font-body);
+  font-size: var(--text-2xl);
+  color: var(--color-text-secondary);
+  max-width: 700px;
+  margin: 0 auto var(--spacing-xl);
+}
+
+.hero-description-wrapper {
+  max-width: 600px;
+  margin: 0 auto var(--spacing-2xl);
+}
+
+.hero-description {
+  font-size: var(--text-lg);
+  line-height: 1.8;
+  color: var(--color-text-primary);
+}
+
+.coming-soon-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--color-accent), var(--color-lavender-mist));
+  color: var(--color-pure-white);
+  padding: 0.75rem 2rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: var(--text-xl);
+  margin-bottom: var(--spacing-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.app-store-buttons-wrapper {
+  display: flex;
+  gap: var(--spacing-lg);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.app-store-button-container {
+  position: relative;
+}
+
+.app-store-button-disabled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 60px;
+  opacity: 0.5;
+  cursor: not-allowed;
+  transition: opacity 0.3s ease;
+}
+
+.app-store-button-disabled img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.app-store-button-label {
+  position: absolute;
+  bottom: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+/* ========================================
+   SECTION HEADINGS
+   ======================================== */
+.section-heading {
+  color: var(--color-accent);
+}
+
+/* ========================================
+   CTA SECTION
+   ======================================== */
+.cta-container {
+  max-width: 700px;
+}
+
+.cta-text {
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.cta-link {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+/* ========================================
+   FOOTER BRAND
+   ======================================== */
+.footer-brand {
+  font-family: var(--font-primary);
+  font-size: var(--text-2xl);
+  color: var(--color-lavender-mist);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* ========================================
+   NAVIGATION BRAND
+   ======================================== */
+.nav-brand-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-brand-logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
 }
 
 /* ========================================

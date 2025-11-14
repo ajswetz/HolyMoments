@@ -1,279 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- Primary Meta Tags -->
     <title>Holy Moments</title>
-    <meta name="title" content="Holy Moments">
-    <meta name="description" content="Experience the Father's love through frequent moments of prayer throughout the day. Holy Moments breaks through the distractions of modern life to help you keep your eyes fixed on Jesus, our only Lord and Savior.">
-    <meta name="keywords" content="prayer, meditation, spiritual, holy moments, daily inspiration, ancient wisdom, mindfulness">
-    <meta name="author" content="Holy Moments">
+    <meta name="title" content="Holy Moments" />
+    <meta
+      name="description"
+      content="Holy Moments is a prayer reminder app that helps you encounter Jesus throughout the day. Each notification is paired with a scripture quote, some wisdom from a saint, or a prayer. Let the Lord use your phone for good, making you holy one moment at a time."
+    />
+    <meta
+      name="keywords"
+      content="prayer, meditation, spiritual, holy moments, daily inspiration, ancient wisdom, mindfulness"
+    />
+    <meta name="author" content="Holy Moments" />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://holymoments.app/">
-    <meta property="og:title" content="Holy Moments">
-    <meta property="og:description" content="Experience the Father's love through frequent moments of prayer throughout the day. Holy Moments breaks through the distractions of modern life to help you keep your eyes fixed on Jesus, our only Lord and Savior.">
-    <meta property="og:image" content="https://holymoments.app/Holy_Moments_OG_Image.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="Holy Moments">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://holymoments.app/" />
+    <meta property="og:title" content="Holy Moments" />
+    <meta
+      property="og:description"
+      content="Holy Moments is a prayer reminder app that helps you encounter Jesus throughout the day. Each notification is paired with a scripture quote, some wisdom from a saint, or a prayer. Let the Lord use your phone for good, making you holy one moment at a time."
+    />
+    <meta
+      property="og:image"
+      content="https://holymoments.app/Holy_Moments_OG_Image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Holy Moments" />
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://holymoments.app/">
-    <meta name="twitter:title" content="Holy Moments">
-    <meta name="twitter:description" content="Experience the Father's love through frequent moments of prayer throughout the day. Holy Moments breaks through the distractions of modern life to help you keep your eyes fixed on Jesus, our only Lord and Savior.">
-    <meta name="twitter:image" content="https://holymoments.app/Holy_Moments_OG_Image.png">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://holymoments.app/" />
+    <meta name="twitter:title" content="Holy Moments" />
+    <meta
+      name="twitter:description"
+      content="Holy Moments is a prayer reminder app that helps you encounter Jesus throughout the day. Each notification is paired with a scripture quote, some wisdom from a saint, or a prayer. Let the Lord use your phone for good, making you holy one moment at a time."
+    />
+    <meta
+      name="twitter:image"
+      content="https://holymoments.app/Holy_Moments_OG_Image.png"
+    />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/HolyMomentsLive-iOS-Default-256x256@1x.png">
+    <link
+      rel="icon"
+      type="image/png"
+      href="/HolyMomentsLive-iOS-Default-256x256@1x.png"
+    />
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://holymoments.app/">
+    <link rel="canonical" href="https://holymoments.app/" />
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 
     <!-- Preconnect to Google Fonts for performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
     <!-- Header Navigation -->
     <header class="header">
-        <nav class="nav container">
-            <a href="/" class="nav-brand" style="display: flex; align-items: center; gap: 0.5rem;">
-                <img src="HolyMomentsLive-iOS-Default-256x256@1x.png" alt="Holy Moments Logo" style="height: 40px; width: 40px; border-radius: 8px;">
-                Holy Moments
-            </a>
+      <nav class="nav container">
+        <a href="/" class="nav-brand nav-brand-wrapper">
+          <img
+            src="HolyMomentsLive-iOS-Default-256x256@1x.png"
+            alt="Holy Moments Logo"
+            class="nav-brand-logo"
+          />
+          Holy Moments
+        </a>
 
-            <!-- Hamburger Menu Button (Mobile Only) -->
-            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+        <!-- Hamburger Menu Button (Mobile Only) -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-            <!-- Navigation Links -->
-            <ul class="nav-links" id="navLinks">
-                <li><a href="/privacy-policy.html">Privacy</a></li>
-                <li><a href="/terms-of-service.html">Terms</a></li>
-                <li><a href="mailto:contact@holymoments.app">Contact</a></li>
-            </ul>
-        </nav>
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="navLinks">
+          <li><a href="/privacy-policy.html">Privacy</a></li>
+          <li><a href="/terms-of-service.html">Terms</a></li>
+          <li><a href="mailto:contact@holymoments.app">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
-        <section class="section">
-            <div class="container text-center">
-                <img src="HolyMomentsLive-iOS-Default-256x256@1x.png" alt="Holy Moments App Icon" class="fade-in" style="width: 120px; height: 120px; margin: 0 auto var(--spacing-lg); display: block; border-radius: 27px; box-shadow: var(--shadow-xl);">
+      <!-- Hero Section -->
+      <section class="section">
+        <div class="container text-center">
+          <img
+            src="HolyMomentsLive-iOS-Default-256x256@1x.png"
+            alt="Holy Moments App Icon"
+            class="fade-in hero-icon"
+          />
 
-                <h1 class="fade-in" style="color: var(--color-royal-violet); font-size: var(--text-6xl); margin-bottom: var(--spacing-md);">
-                    Holy Moments
-                </h1>
+          <h1 class="fade-in hero-title">Holy Moments</h1>
 
-                <p class="fade-in" style="font-family: var(--font-body); font-size: var(--text-2xl); color: var(--color-text-secondary); max-width: 700px; margin: 0 auto var(--spacing-xl);">
-                    Encounter Jesus
-                </p>
+          <p class="fade-in hero-subtitle">Encounter Jesus</p>
 
-                <div class="fade-in" style="max-width: 600px; margin: 0 auto var(--spacing-2xl);">
-                    <p style="font-size: var(--text-lg); line-height: 1.8; color: var(--color-text-primary);">
-                        Experience the Father's love through frequent moments of prayer throughout the day.
-                        Holy Moments breaks through the distractions of modern life to help you keep your eyes fixed on Jesus, our only Lord and Savior.
-                    </p>
-                </div>
+          <div class="fade-in hero-description-wrapper">
+            <p class="hero-description">
+              Holy Moments is a prayer reminder app that helps you encounter
+              Jesus throughout the day. Each notification is paired with a
+              scripture quote, some wisdom from a saint, or a prayer. Let the
+              Lord use your phone for good, making you holy one moment at a
+              time.
+            </p>
+          </div>
 
-                <!-- Coming Soon Badge -->
-                <div class="fade-in" style="display: inline-block; background: linear-gradient(135deg, var(--color-royal-violet), var(--color-lavender-mist)); color: var(--color-pure-white); padding: 0.75rem 2rem; border-radius: var(--radius-full); font-family: var(--font-ui); font-weight: 600; font-size: var(--text-xl); margin-bottom: var(--spacing-xl); box-shadow: var(--shadow-lg);">
-                    Coming Soon
-                </div>
+          <!-- Coming Soon Badge -->
+          <div class="fade-in coming-soon-badge">Coming Soon</div>
 
-                <!-- App Store Buttons -->
-                <div class="fade-in" style="display: flex; gap: var(--spacing-lg); justify-content: center; flex-wrap: wrap; margin-bottom: var(--spacing-2xl);">
-                    <!-- App Store Button (Disabled) -->
-                    <div style="position: relative;">
-                        <a href="#" aria-disabled="true" onclick="return false;" style="display: flex; align-items: center; justify-content: center; width: 180px; height: 60px; opacity: 0.5; cursor: not-allowed; transition: opacity 0.3s ease;">
-                            <img src="Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store" style="width: 100%; height: 100%; object-fit: contain;">
-                        </a>
-                        <span style="position: absolute; bottom: -1.5rem; left: 50%; transform: translateX(-50%); font-family: var(--font-ui); font-size: var(--text-xs); color: var(--color-text-secondary); white-space: nowrap;">Coming Soon</span>
-                    </div>
-
-                    <!-- Google Play Button (Disabled) -->
-                    <div style="position: relative;">
-                        <a href="#" aria-disabled="true" onclick="return false;" style="display: flex; align-items: center; justify-content: center; width: 180px; height: 60px; opacity: 0.5; cursor: not-allowed; transition: opacity 0.3s ease;">
-                            <img src="GetItOnGooglePlay_Badge_Web_color_English.svg" alt="Get it on Google Play" style="width: 100%; height: 100%; object-fit: contain;">
-                        </a>
-                        <span style="position: absolute; bottom: -1.5rem; left: 50%; transform: translateX(-50%); font-family: var(--font-ui); font-size: var(--text-xs); color: var(--color-text-secondary); white-space: nowrap;">Coming Soon</span>
-                    </div>
-                </div>
+          <!-- App Store Buttons -->
+          <div class="fade-in app-store-buttons-wrapper">
+            <!-- App Store Button (Disabled) -->
+            <div class="app-store-button-container">
+              <a
+                href="#"
+                aria-disabled="true"
+                onclick="return false;"
+                class="app-store-button-disabled"
+              >
+                <img
+                  src="Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
+                  alt="Download on the App Store"
+                />
+              </a>
+              <span class="app-store-button-label">Coming Soon</span>
             </div>
-        </section>
 
-        <!-- Features Section -->
-        <section class="section" style="background: linear-gradient(180deg, var(--color-pale-lavender) 0%, var(--color-cream) 100%); padding: var(--spacing-3xl) 0;">
-            <div class="container">
-                <h2 class="text-center mb-xl" style="color: var(--color-royal-violet);">
-                    What Awaits You
-                </h2>
-
-                <style>
-                    .features-grid {
-                        display: grid;
-                        grid-template-columns: repeat(2, 1fr);
-                        gap: var(--spacing-lg);
-                        max-width: 900px;
-                        margin: 0 auto;
-                    }
-                    @media (max-width: 768px) {
-                        .features-grid {
-                            grid-template-columns: 1fr;
-                        }
-                    }
-                </style>
-                <div class="features-grid">
-                    <!-- Feature 1 -->
-                    <div class="card">
-                        <h3 style="font-family: var(--font-ui); font-size: var(--text-xl); color: var(--color-royal-violet); margin-bottom: var(--spacing-sm);">
-                            Prayer Reminders
-                        </h3>
-                        <p style="color: var(--color-text-secondary);">
-                            Receive notifications on your phone throughout the day reminding you to pause and pray.
-                        </p>
-                    </div>
-
-                    <!-- Feature 2 -->
-                    <div class="card">
-                        <h3 style="font-family: var(--font-ui); font-size: var(--text-xl); color: var(--color-royal-violet); margin-bottom: var(--spacing-sm);">
-                            Ancient Wisdom
-                        </h3>
-                        <p style="color: var(--color-text-secondary);">
-                            Reflect on Holy Scripture, quotes from holy men and women, and timeless prayers.
-                        </p>
-                    </div>
-                    
-                    <!-- Feature 3 -->
-                    <div class="card">
-                        <h3 style="font-family: var(--font-ui); font-size: var(--text-xl); color: var(--color-royal-violet); margin-bottom: var(--spacing-sm);">
-                            Make it Your Own
-                        </h3>
-                        <p style="color: var(--color-text-secondary);">
-                            Add quotes to your list of favorites, create custom quotes, and customize your notification schedule.
-                        </p>
-                    </div>
-                    
-                    <!-- Feature 4 -->
-                    <div class="card">
-                        <h3 style="font-family: var(--font-ui); font-size: var(--text-xl); color: var(--color-royal-violet); margin-bottom: var(--spacing-sm);">
-                            Share the Light
-                        </h3>
-                        <p style="color: var(--color-text-secondary);">
-                            Inspire others by sharing meaningful quotes and moments of reflection with friends and family.
-                        </p>
-                    </div>
-                </div>
+            <!-- Google Play Button (Disabled) -->
+            <div class="app-store-button-container">
+              <a
+                href="#"
+                aria-disabled="true"
+                onclick="return false;"
+                class="app-store-button-disabled"
+              >
+                <img
+                  src="GetItOnGooglePlay_Badge_Web_color_English.svg"
+                  alt="Get it on Google Play"
+                />
+              </a>
+              <span class="app-store-button-label">Coming Soon</span>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Call to Action Section -->
-        <section class="section text-center">
-            <div class="container" style="max-width: 700px;">
-                <h2 class="mb-md" style="color: var(--color-royal-violet);">
-                    Coming Soon
-                </h2>
-                <p style="font-size: var(--text-lg); color: var(--color-text-secondary); margin-bottom: var(--spacing-lg);">
-                    Holy Moments will be available on iOS and Android soon. Questions or feedback? Contact us at
-                    <a href="mailto:contact@holymoments.app" style="color: var(--color-royal-violet); text-decoration: underline;">contact@holymoments.app</a>
-                </p>
+      <!-- Features Section -->
+      <section class="section features-section">
+        <div class="container">
+          <h2 class="text-center mb-xl section-heading">What Awaits You</h2>
+
+          <div class="features-grid">
+            <!-- Feature 1 -->
+            <div class="card">
+              <h3 class="feature-card-header">Prayer Reminders</h3>
+              <p class="feature-card-text">
+                Receive notifications on your phone throughout the day reminding
+                you to pause and pray.
+              </p>
             </div>
-        </section>
+
+            <!-- Feature 2 -->
+            <div class="card">
+              <h3 class="feature-card-header">Ancient Wisdom</h3>
+              <p class="feature-card-text">
+                Reflect on Holy Scripture, quotes from holy men and women, and
+                timeless prayers.
+              </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="card">
+              <h3 class="feature-card-header">Make it Your Own</h3>
+              <p class="feature-card-text">
+                Add quotes to your list of favorites, create custom quotes, and
+                customize your notification schedule.
+              </p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="card">
+              <h3 class="feature-card-header">Share the Light</h3>
+              <p class="feature-card-text">
+                Inspire others by sharing meaningful quotes and moments of
+                reflection with friends and family.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action Section -->
+      <section class="section text-center">
+        <div class="container cta-container">
+          <h2 class="mb-md section-heading">Coming Soon</h2>
+          <p class="cta-text">
+            Holy Moments will be available on iOS and Android soon. Questions or
+            feedback? Contact us at
+            <a href="mailto:contact@holymoments.app" class="cta-link"
+              >contact@holymoments.app</a
+            >
+          </p>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p style="font-family: var(--font-primary); font-size: var(--text-2xl); color: var(--color-lavender-mist); margin-bottom: var(--spacing-sm);">
-                    Holy Moments
-                </p>
+      <div class="container">
+        <div class="footer-content">
+          <p class="footer-brand">Holy Moments</p>
 
-                <ul class="footer-links">
-                    <li><a href="/privacy-policy.html">Privacy Policy</a></li>
-                    <li><a href="/terms-of-service.html">Terms of Service</a></li>
-                    <li><a href="mailto:contact@holymoments.app">Contact Us</a></li>
-                </ul>
+          <ul class="footer-links">
+            <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="/terms-of-service.html">Terms of Service</a></li>
+            <li><a href="mailto:contact@holymoments.app">Contact Us</a></li>
+          </ul>
 
-                <p class="footer-copyright">
-                    &copy; 2025 Holy Moments. All rights reserved.
-                </p>
-            </div>
+          <p class="footer-copyright">
+            &copy; 2025 Holy Moments. All rights reserved.
+          </p>
         </div>
+      </div>
     </footer>
 
     <!-- Minimal JavaScript for smooth animations on scroll -->
     <script>
-        // Intersection Observer for fade-in animations on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+      // Intersection Observer for fade-in animations on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
 
-        // Observe all fade-in elements
-        document.querySelectorAll('.fade-in').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-            observer.observe(el);
+      // Observe all fade-in elements
+      document.querySelectorAll(".fade-in").forEach((el) => {
+        el.style.opacity = "0";
+        el.style.transform = "translateY(20px)";
+        el.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out";
+        observer.observe(el);
+      });
+
+      // Prevent disabled app store buttons from navigating
+      document
+        .querySelectorAll(".app-store-button-disabled")
+        .forEach((button) => {
+          button.addEventListener("click", (e) => {
+            e.preventDefault();
+            return false;
+          });
         });
 
-        // Prevent disabled app store buttons from navigating
-        document.querySelectorAll('.app-store-button.disabled').forEach(button => {
-            button.addEventListener('click', (e) => {
-                e.preventDefault();
-                return false;
-            });
+      // Hamburger menu toggle
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("navLinks");
+
+      if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+          hamburger.classList.toggle("active");
+          navLinks.classList.toggle("active");
         });
 
-        // Hamburger menu toggle
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('navLinks');
+        // Close menu when clicking on a link
+        navLinks.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navLinks.classList.remove("active");
+          });
+        });
 
-        if (hamburger && navLinks) {
-            hamburger.addEventListener('click', () => {
-                hamburger.classList.toggle('active');
-                navLinks.classList.toggle('active');
-            });
-
-            // Close menu when clicking on a link
-            navLinks.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    hamburger.classList.remove('active');
-                    navLinks.classList.remove('active');
-                });
-            });
-
-            // Close menu when clicking outside
-            document.addEventListener('click', (e) => {
-                if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
-                    hamburger.classList.remove('active');
-                    navLinks.classList.remove('active');
-                }
-            });
-        }
+        // Close menu when clicking outside
+        document.addEventListener("click", (e) => {
+          if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+            hamburger.classList.remove("active");
+            navLinks.classList.remove("active");
+          }
+        });
+      }
     </script>
-</body>
+  </body>
 </html>
