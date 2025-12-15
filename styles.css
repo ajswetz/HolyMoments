@@ -562,20 +562,36 @@ strong, b {
   position: relative;
 }
 
+/* Base styles for both enabled and disabled buttons */
+.app-store-button,
 .app-store-button-disabled {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 180px;
-  height: 60px;
-  opacity: 0.5;
-  cursor: not-allowed;
-  transition: opacity 0.3s ease;
+  transition: all 0.3s ease;
 }
 
+/* Enabled button styles */
+.app-store-button {
+  cursor: pointer;
+}
+
+.app-store-button:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+
+/* Disabled button styles */
+.app-store-button-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Image sizing for both states */
+.app-store-button img,
 .app-store-button-disabled img {
-  width: 100%;
-  height: 100%;
+  height: 54px;
+  width: auto;
   object-fit: contain;
 }
 
